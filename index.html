@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            /* max-width: 100vw; */
+            /* height: 100%;   */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+        }
+
+        .header {
+            text-transform: uppercase;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            margin: 32px 16px 0 16px;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+
+            cursor: pointer;
+        }
+
+        .margin-left-12 {
+            margin-left: 12px;
+
+        }
+
+        .header-right menu {
+            position: relative;
+        }
+
+        .header-right .menu .menu-list-item {
+            position: absolute;
+            border: 1px solid #808080;
+            padding: 14px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+
+        .header-right .menu:hover .menu-list-item {
+            display: flex;
+        }
+
+        .background-header {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial, sans-serif;
+            color: aliceblue;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            text-transform: uppercase;
+            
+
+        }
+
+
+        .button {
+            /* background-color: #4CAF50; */
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /* border-radius: 4px; */
+        }
+        .red{
+            background-color: red;
+        }
+        .black{
+            background-color: black;
+        }
+
+        .section-2-content {
+            display: grid;
+            column-gap: 80px;
+            grid-template-columns: auto auto;
+            padding: 60px 120px;
+        }
+
+        .section-2-content .left {
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        .section-2-content .right {
+
+          font-weight: 100;
+          color: #808080;
+        }
+
+        .card {
+            border: 1px solid #808080;
+        }
+
+        .card .title {
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-3 {
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(211, 211, 211, 0.5);
+        }
+
+        .section-3-content {
+            margin-top: 20px;
+            display: grid;
+            column-gap: 80px;
+            grid-template-columns: auto auto;
+        }
+
+        .section-3-footer {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: auto auto;
+        }
+
+        .section-4 {
+            padding: 100px;
+        }
+
+        .grid {
+            display: grid;
+
+        }
+        .flex{
+            display: flex;
+        }
+
+        .circle-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .section-4  .grid{
+            grid-template-columns: auto auto;
+            gap: 80px;
+        }
+        .section-4-title{
+            font-weight: 800;
+            font-size: 40px;
+        }
+        .section-4-sub-title{
+            font-weight: 400;
+            color: #808080;
+            margin-bottom: 30px;
+        }
+        .sub-text{
+            font-weight: 400;
+            color: #808080;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-header">
+        <div class="header">
+            <div class="header-left">
+                <span>spatial <span>by templated</span></span>
+            </div>
+            <div class="header-right">
+                <div class="margin-left-12">Home</div>
+                <div class="menu margin-left-12">generic
+
+                    <div class="menu-list-item">
+                        <div>generic 1</div>
+                        <div> generic 2</div>
+                        <div> generic 3</div>
+                    </div>
+                </div>
+                <div class="margin-left-12">element</div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div>spatial</div>
+            <div class="">Lorem ipsum dolor sit amet consectetur</div>
+            <div class="">Lorem ipsum dolor sit amet consectetur</div>
+            <div class="button red">
+                <div>get started</div>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="section-2-content">
+            <div class="left">
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="right">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus magni molestiae similique,
+                    corrupti ea sint libero odio dolorem. Enim molestiae nam quibusdam voluptate numquam optio
+                    voluptatem dignissimos unde eum suscipit.</div>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta rem veritatis accusantium
+                    voluptas eum blanditiis accusamus enim quis incidunt? Ea commodi optio veniam odit nostrum sunt
+                    laborum et quaerat.</div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div class="section-3-content">
+            <div class="card">
+                <img src="./pic02.jpg" alt="" width="240px">
+                <div class="center title">Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="card">
+                <img src="./pic03.jpg" alt="" width="240px">
+                <div class="center title">Lorem ipsum dolor sit amet.</div>
+            </div>
+        </div>
+        <div class="section-3-footer">
+            <div class="button red">Lorem, ipsum.</div>
+            <div class="button black">Lorem, ipsum.</div>
+        </div>
+    </div>
+    <div class="section-4">
+        <div class="section-4-title">Lorem ipsum dolor sit amet.</div>
+        <div class="section-4-sub-title">Lorem ipsum dolor sit amet.</div>
+        <div class="grid center">
+            <div class="flex">
+                <div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div >Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+                </div>
+                <img src="./pic02.jpg" class="circle-image">
+             </div>
+             <div class="flex">
+                <div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+                </div>
+                <img src="./pic03.jpg" class="circle-image">
+            </div>
+            <div class="flex">
+                <div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</div>
+                </div>
+                <img src="./pic04.jpg" class="circle-image">
+            </div>
+            <div class="flex">
+                <div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</div>
+                </div>
+                <img src="./pic05.jpg" class="circle-image">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
